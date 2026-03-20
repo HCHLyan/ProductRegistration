@@ -2,16 +2,16 @@
 inventario = []
 
 
-# ---------------------------
+
 # Función para agregar producto
-# ---------------------------
+
 def agregar_producto():
     print("\n--- Agregar producto ---")
     
     # Solicitar nombre
     nombre = input("Ingresa el nombre del producto: ")
 
-    # Validar precio (float)
+    # Validar precio
     while True:
         precio_input = input("Ingresa el precio del producto: ")
         try:
@@ -23,7 +23,7 @@ def agregar_producto():
         except ValueError:
             print("Error: ingresa un número válido para el precio.")
 
-    # Validar cantidad (int)
+    # Validar cantidad
     while True:
         cantidad_input = input("Ingresa la cantidad del producto: ")
         try:
@@ -47,9 +47,9 @@ def agregar_producto():
     print("Producto agregado correctamente.")
 
 
-# ---------------------------
+
 # Función para mostrar inventario
-# ---------------------------
+
 def mostrar_inventario():
     print("\n--- Inventario ---")
 
@@ -63,9 +63,9 @@ def mostrar_inventario():
         print(f"Producto: {producto['nombre']} | Precio: {producto['precio']} | Cantidad: {producto['cantidad']}")
 
 
-# ---------------------------
+
 # Función para calcular estadísticas
-# ---------------------------
+
 def calcular_estadisticas():
     print("\n--- Estadísticas ---")
 
@@ -87,9 +87,9 @@ def calcular_estadisticas():
     print(f"Cantidad total de productos: {total_productos}")
 
 
-# ---------------------------
+
 # Menú principal (bucle infinito hasta salir)
-# ---------------------------
+
 while True:
     print("\n===== MENÚ =====")
     print("1. Agregar producto")
@@ -107,15 +107,13 @@ while True:
     elif opcion == "3":
         calcular_estadisticas()
     elif opcion == "4":
-        print("Saliendo del programa...")
+        print("Fin del programa.")
         break
     else:
         print("Opción inválida. Intenta nuevamente.")
 
 
-# ---------------------------
-# Resumen final
-# ---------------------------
+# Resumen final:
 # Este programa permite gestionar un inventario básico usando listas y diccionarios.
 # El usuario puede agregar productos, visualizar el inventario y calcular estadísticas.
 # Se aplicaron validaciones de entrada, uso de funciones y estructuras de control
