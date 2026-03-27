@@ -1,6 +1,9 @@
 # main.py
 # Archivo principal que ejecuta el menú del sistema
 
+# main.py
+# Archivo principal que ejecuta el menú del sistema
+
 from src import servicios
 from src import archivos
 
@@ -126,8 +129,10 @@ while True:
     else:
         print("Opción inválida. Intenta de nuevo.")
 
-
-
+# Este programa permite gestionar un inventario básico usando listas y diccionarios.
+# El usuario puede agregar productos, visualizar el inventario y calcular estadísticas.
+# Se aplicaron validaciones de entrada, uso de funciones y estructuras de control
+# como bucles y condicionales para asegurar un funcionamiento correcto.
 # Este programa permite gestionar un inventario básico usando listas y diccionarios.
 # El usuario puede agregar productos, visualizar el inventario y calcular estadísticas.
 # Se aplicaron validaciones de entrada, uso de funciones y estructuras de control
